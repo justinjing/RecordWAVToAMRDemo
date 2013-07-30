@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E370EFF1706901200176863 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E370EFE1706901200176863 /* icon.png */; };
+		2E370F011706901700176863 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E370F001706901700176863 /* icon@2x.png */; };
+		2E9151F61705D45500245A79 /* CustomWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9151F51705D45500245A79 /* CustomWindow.m */; };
+		2EDEC378170590E40028A6CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EDEC377170590E40028A6CF /* UIKit.framework */; };
+		2EDEC37A170590E40028A6CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EDEC379170590E40028A6CF /* Foundation.framework */; };
+		2EDEC37C170590E40028A6CF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EDEC37B170590E40028A6CF /* CoreGraphics.framework */; };
+		2EDEC382170590E40028A6CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2EDEC380170590E40028A6CF /* InfoPlist.strings */; };
+		2EDEC384170590E50028A6CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDEC383170590E50028A6CF /* main.m */; };
+		2EDEC388170590E50028A6CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDEC387170590E50028A6CF /* AppDelegate.m */; };
+		2EDEC38A170590E50028A6CF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EDEC389170590E50028A6CF /* Default.png */; };
+		2EDEC38C170590E50028A6CF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EDEC38B170590E50028A6CF /* Default@2x.png */; };
+		2EDEC38E170590E50028A6CF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EDEC38D170590E50028A6CF /* Default-568h@2x.png */; };
+		2EDEC391170590E50028A6CF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDEC390170590E50028A6CF /* ViewController.m */; };
+		2EDEC394170590E50028A6CF /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EDEC392170590E50028A6CF /* ViewController.xib */; };
+		2EDEC39C170591340028A6CF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EDEC39A170591340028A6CF /* AudioToolbox.framework */; };
+		2EDEC39D170591340028A6CF /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EDEC39B170591340028A6CF /* CoreAudio.framework */; };
+		2EDEC39F170591390028A6CF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EDEC39E170591390028A6CF /* AVFoundation.framework */; };
+		2EDEC3A3170598D90028A6CF /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDEC3A2170598D90028A6CF /* UIView+Animation.m */; };
+		2EDEC3BE1705A31C0028A6CF /* ChatRecorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDEC3B71705A31C0028A6CF /* ChatRecorderView.m */; };
+		2EDEC3C01705A31C0028A6CF /* ChatVoiceRecorderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDEC3BA1705A31C0028A6CF /* ChatVoiceRecorderVC.m */; };
+		2EDEC3C21705A31C0028A6CF /* VoiceRecorderBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDEC3BD1705A31C0028A6CF /* VoiceRecorderBaseVC.m */; };
+		2EDEC3D41705A3280028A6CF /* amrFileCodec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2EDEC3C61705A3280028A6CF /* amrFileCodec.mm */; };
+		2EDEC3D51705A3280028A6CF /* wav.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2EDEC3C81705A3280028A6CF /* wav.mm */; };
+		2EDEC3D61705A3280028A6CF /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EDEC3CA1705A3280028A6CF /* libopencore-amrnb.a */; };
+		2EDEC3D71705A3280028A6CF /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EDEC3CB1705A3280028A6CF /* libopencore-amrwb.a */; };
+		2EDEC3D81705A3280028A6CF /* VoiceConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2EDEC3D31705A3280028A6CF /* VoiceConverter.mm */; };
+		2EDEC3DF1705A41F0028A6CF /* recorder_trash_can0.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EDEC3D91705A41F0028A6CF /* recorder_trash_can0.png */; };
+		2EDEC3E01705A41F0028A6CF /* recorder_trash_can0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EDEC3DA1705A41F0028A6CF /* recorder_trash_can0@2x.png */; };
+		2EDEC3E11705A41F0028A6CF /* recorder_trash_can1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EDEC3DB1705A41F0028A6CF /* recorder_trash_can1.png */; };
+		2EDEC3E21705A41F0028A6CF /* recorder_trash_can1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EDEC3DC1705A41F0028A6CF /* recorder_trash_can1@2x.png */; };
+		2EDEC3E31705A41F0028A6CF /* recorder_trash_can2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EDEC3DD1705A41F0028A6CF /* recorder_trash_can2.png */; };
+		2EDEC3E41705A41F0028A6CF /* recorder_trash_can2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EDEC3DE1705A41F0028A6CF /* recorder_trash_can2@2x.png */; };
+		FEF759B717A7BF1400736E7F /* chat_voice_03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEF759A417A7BF1400736E7F /* chat_voice_03@2x.png */; };
+		FEF759B817A7BF1400736E7F /* RecordingBkg.png in Resources */ = {isa = PBXBuildFile; fileRef = FEF759A517A7BF1400736E7F /* RecordingBkg.png */; };
+		FEF759B917A7BF1400736E7F /* RecordingBkg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEF759A617A7BF1400736E7F /* RecordingBkg@2x.png */; };
+		FEF759BA17A7BF1400736E7F /* RecordingSignal001.png in Resources */ = {isa = PBXBuildFile; fileRef = FEF759A717A7BF1400736E7F /* RecordingSignal001.png */; };
+		FEF759BB17A7BF1400736E7F /* RecordingSignal001@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEF759A817A7BF1400736E7F /* RecordingSignal001@2x.png */; };
+		FEF759BC17A7BF1400736E7F /* RecordingSignal002.png in Resources */ = {isa = PBXBuildFile; fileRef = FEF759A917A7BF1400736E7F /* RecordingSignal002.png */; };
+		FEF759BD17A7BF1400736E7F /* RecordingSignal002@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEF759AA17A7BF1400736E7F /* RecordingSignal002@2x.png */; };
+		FEF759BE17A7BF1400736E7F /* RecordingSignal003.png in Resources */ = {isa = PBXBuildFile; fileRef = FEF759AB17A7BF1400736E7F /* RecordingSignal003.png */; };
+		FEF759BF17A7BF1400736E7F /* RecordingSignal003@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEF759AC17A7BF1400736E7F /* RecordingSignal003@2x.png */; };
+		FEF759C017A7BF1400736E7F /* RecordingSignal004.png in Resources */ = {isa = PBXBuildFile; fileRef = FEF759AD17A7BF1400736E7F /* RecordingSignal004.png */; };
+		FEF759C117A7BF1400736E7F /* RecordingSignal004@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEF759AE17A7BF1400736E7F /* RecordingSignal004@2x.png */; };
+		FEF759C217A7BF1400736E7F /* RecordingSignal005.png in Resources */ = {isa = PBXBuildFile; fileRef = FEF759AF17A7BF1400736E7F /* RecordingSignal005.png */; };
+		FEF759C317A7BF1400736E7F /* RecordingSignal005@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEF759B017A7BF1400736E7F /* RecordingSignal005@2x.png */; };
+		FEF759C417A7BF1400736E7F /* RecordingSignal006.png in Resources */ = {isa = PBXBuildFile; fileRef = FEF759B117A7BF1400736E7F /* RecordingSignal006.png */; };
+		FEF759C517A7BF1400736E7F /* RecordingSignal006@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEF759B217A7BF1400736E7F /* RecordingSignal006@2x.png */; };
+		FEF759C617A7BF1400736E7F /* RecordingSignal007.png in Resources */ = {isa = PBXBuildFile; fileRef = FEF759B317A7BF1400736E7F /* RecordingSignal007.png */; };
+		FEF759C717A7BF1400736E7F /* RecordingSignal007@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEF759B417A7BF1400736E7F /* RecordingSignal007@2x.png */; };
+		FEF759C817A7BF1400736E7F /* RecordingSignal008.png in Resources */ = {isa = PBXBuildFile; fileRef = FEF759B517A7BF1400736E7F /* RecordingSignal008.png */; };
+		FEF759C917A7BF1400736E7F /* RecordingSignal008@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEF759B617A7BF1400736E7F /* RecordingSignal008@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2E370EFE1706901200176863 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../icon.png; sourceTree = "<group>"; };
+		2E370F001706901700176863 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "../../icon@2x.png"; sourceTree = "<group>"; };
+		2E9151F41705D45500245A79 /* CustomWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomWindow.h; sourceTree = "<group>"; };
+		2E9151F51705D45500245A79 /* CustomWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomWindow.m; sourceTree = "<group>"; };
+		2EDEC374170590E40028A6CF /* AmrConvertAndRecord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmrConvertAndRecord.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EDEC377170590E40028A6CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2EDEC379170590E40028A6CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2EDEC37B170590E40028A6CF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2EDEC37F170590E40028A6CF /* AmrConvertAndRecord-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AmrConvertAndRecord-Info.plist"; sourceTree = "<group>"; };
+		2EDEC381170590E40028A6CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2EDEC383170590E50028A6CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2EDEC385170590E50028A6CF /* AmrConvertAndRecord-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AmrConvertAndRecord-Prefix.pch"; sourceTree = "<group>"; };
+		2EDEC386170590E50028A6CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2EDEC387170590E50028A6CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2EDEC389170590E50028A6CF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		2EDEC38B170590E50028A6CF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		2EDEC38D170590E50028A6CF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2EDEC38F170590E50028A6CF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2EDEC390170590E50028A6CF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2EDEC393170590E50028A6CF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		2EDEC39A170591340028A6CF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2EDEC39B170591340028A6CF /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		2EDEC39E170591390028A6CF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2EDEC3A1170598D90028A6CF /* UIView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation.h"; sourceTree = "<group>"; };
+		2EDEC3A2170598D90028A6CF /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
+		2EDEC3B61705A31C0028A6CF /* ChatRecorderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatRecorderView.h; sourceTree = "<group>"; };
+		2EDEC3B71705A31C0028A6CF /* ChatRecorderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatRecorderView.m; sourceTree = "<group>"; };
+		2EDEC3B91705A31C0028A6CF /* ChatVoiceRecorderVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatVoiceRecorderVC.h; sourceTree = "<group>"; };
+		2EDEC3BA1705A31C0028A6CF /* ChatVoiceRecorderVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatVoiceRecorderVC.m; sourceTree = "<group>"; };
+		2EDEC3BC1705A31C0028A6CF /* VoiceRecorderBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VoiceRecorderBaseVC.h; path = ../VoiceRecorderBaseVC.h; sourceTree = "<group>"; };
+		2EDEC3BD1705A31C0028A6CF /* VoiceRecorderBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VoiceRecorderBaseVC.m; path = ../VoiceRecorderBaseVC.m; sourceTree = "<group>"; };
+		2EDEC3C51705A3280028A6CF /* amrFileCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amrFileCodec.h; sourceTree = "<group>"; };
+		2EDEC3C61705A3280028A6CF /* amrFileCodec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = amrFileCodec.mm; sourceTree = "<group>"; };
+		2EDEC3C71705A3280028A6CF /* wav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wav.h; sourceTree = "<group>"; };
+		2EDEC3C81705A3280028A6CF /* wav.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = wav.mm; sourceTree = "<group>"; };
+		2EDEC3CA1705A3280028A6CF /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
+		2EDEC3CB1705A3280028A6CF /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a"; sourceTree = "<group>"; };
+		2EDEC3CD1705A3280028A6CF /* interf_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_dec.h; sourceTree = "<group>"; };
+		2EDEC3CE1705A3280028A6CF /* interf_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_enc.h; sourceTree = "<group>"; };
+		2EDEC3D01705A3280028A6CF /* dec_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dec_if.h; sourceTree = "<group>"; };
+		2EDEC3D11705A3280028A6CF /* if_rom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_rom.h; sourceTree = "<group>"; };
+		2EDEC3D21705A3280028A6CF /* VoiceConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceConverter.h; sourceTree = "<group>"; };
+		2EDEC3D31705A3280028A6CF /* VoiceConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VoiceConverter.mm; sourceTree = "<group>"; };
+		2EDEC3D91705A41F0028A6CF /* recorder_trash_can0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recorder_trash_can0.png; sourceTree = "<group>"; };
+		2EDEC3DA1705A41F0028A6CF /* recorder_trash_can0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recorder_trash_can0@2x.png"; sourceTree = "<group>"; };
+		2EDEC3DB1705A41F0028A6CF /* recorder_trash_can1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recorder_trash_can1.png; sourceTree = "<group>"; };
+		2EDEC3DC1705A41F0028A6CF /* recorder_trash_can1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recorder_trash_can1@2x.png"; sourceTree = "<group>"; };
+		2EDEC3DD1705A41F0028A6CF /* recorder_trash_can2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recorder_trash_can2.png; sourceTree = "<group>"; };
+		2EDEC3DE1705A41F0028A6CF /* recorder_trash_can2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recorder_trash_can2@2x.png"; sourceTree = "<group>"; };
+		FEF759A417A7BF1400736E7F /* chat_voice_03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_voice_03@2x.png"; sourceTree = "<group>"; };
+		FEF759A517A7BF1400736E7F /* RecordingBkg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecordingBkg.png; sourceTree = "<group>"; };
+		FEF759A617A7BF1400736E7F /* RecordingBkg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingBkg@2x.png"; sourceTree = "<group>"; };
+		FEF759A717A7BF1400736E7F /* RecordingSignal001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecordingSignal001.png; sourceTree = "<group>"; };
+		FEF759A817A7BF1400736E7F /* RecordingSignal001@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal001@2x.png"; sourceTree = "<group>"; };
+		FEF759A917A7BF1400736E7F /* RecordingSignal002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecordingSignal002.png; sourceTree = "<group>"; };
+		FEF759AA17A7BF1400736E7F /* RecordingSignal002@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal002@2x.png"; sourceTree = "<group>"; };
+		FEF759AB17A7BF1400736E7F /* RecordingSignal003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecordingSignal003.png; sourceTree = "<group>"; };
+		FEF759AC17A7BF1400736E7F /* RecordingSignal003@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal003@2x.png"; sourceTree = "<group>"; };
+		FEF759AD17A7BF1400736E7F /* RecordingSignal004.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecordingSignal004.png; sourceTree = "<group>"; };
+		FEF759AE17A7BF1400736E7F /* RecordingSignal004@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal004@2x.png"; sourceTree = "<group>"; };
+		FEF759AF17A7BF1400736E7F /* RecordingSignal005.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecordingSignal005.png; sourceTree = "<group>"; };
+		FEF759B017A7BF1400736E7F /* RecordingSignal005@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal005@2x.png"; sourceTree = "<group>"; };
+		FEF759B117A7BF1400736E7F /* RecordingSignal006.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecordingSignal006.png; sourceTree = "<group>"; };
+		FEF759B217A7BF1400736E7F /* RecordingSignal006@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal006@2x.png"; sourceTree = "<group>"; };
+		FEF759B317A7BF1400736E7F /* RecordingSignal007.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecordingSignal007.png; sourceTree = "<group>"; };
+		FEF759B417A7BF1400736E7F /* RecordingSignal007@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal007@2x.png"; sourceTree = "<group>"; };
+		FEF759B517A7BF1400736E7F /* RecordingSignal008.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecordingSignal008.png; sourceTree = "<group>"; };
+		FEF759B617A7BF1400736E7F /* RecordingSignal008@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal008@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2EDEC371170590E40028A6CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EDEC39F170591390028A6CF /* AVFoundation.framework in Frameworks */,
+				2EDEC39C170591340028A6CF /* AudioToolbox.framework in Frameworks */,
+				2EDEC39D170591340028A6CF /* CoreAudio.framework in Frameworks */,
+				2EDEC378170590E40028A6CF /* UIKit.framework in Frameworks */,
+				2EDEC37A170590E40028A6CF /* Foundation.framework in Frameworks */,
+				2EDEC37C170590E40028A6CF /* CoreGraphics.framework in Frameworks */,
+				2EDEC3D61705A3280028A6CF /* libopencore-amrnb.a in Frameworks */,
+				2EDEC3D71705A3280028A6CF /* libopencore-amrwb.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2EDEC36B170590E40028A6CF = {
+			isa = PBXGroup;
+			children = (
+				2EDEC37D170590E40028A6CF /* AmrConvertAndRecord */,
+				2EDEC376170590E40028A6CF /* Frameworks */,
+				2EDEC375170590E40028A6CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2EDEC375170590E40028A6CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2EDEC374170590E40028A6CF /* AmrConvertAndRecord.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2EDEC376170590E40028A6CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EDEC39E170591390028A6CF /* AVFoundation.framework */,
+				2EDEC39A170591340028A6CF /* AudioToolbox.framework */,
+				2EDEC39B170591340028A6CF /* CoreAudio.framework */,
+				2EDEC377170590E40028A6CF /* UIKit.framework */,
+				2EDEC379170590E40028A6CF /* Foundation.framework */,
+				2EDEC37B170590E40028A6CF /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2EDEC37D170590E40028A6CF /* AmrConvertAndRecord */ = {
+			isa = PBXGroup;
+			children = (
+				2E9151F41705D45500245A79 /* CustomWindow.h */,
+				2E9151F51705D45500245A79 /* CustomWindow.m */,
+				2EDEC3A41705A1940028A6CF /* img */,
+				2EDEC3A0170598D90028A6CF /* UIViewAnimation */,
+				2EDEC3B31705A31C0028A6CF /* VoiceRecorderVC */,
+				2EDEC3C31705A3280028A6CF /* VoiceConvert */,
+				2EDEC386170590E50028A6CF /* AppDelegate.h */,
+				2EDEC387170590E50028A6CF /* AppDelegate.m */,
+				2EDEC38F170590E50028A6CF /* ViewController.h */,
+				2EDEC390170590E50028A6CF /* ViewController.m */,
+				2EDEC392170590E50028A6CF /* ViewController.xib */,
+				2EDEC37E170590E40028A6CF /* Supporting Files */,
+			);
+			path = AmrConvertAndRecord;
+			sourceTree = "<group>";
+		};
+		2EDEC37E170590E40028A6CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2EDEC37F170590E40028A6CF /* AmrConvertAndRecord-Info.plist */,
+				2EDEC380170590E40028A6CF /* InfoPlist.strings */,
+				2EDEC383170590E50028A6CF /* main.m */,
+				2EDEC385170590E50028A6CF /* AmrConvertAndRecord-Prefix.pch */,
+				2EDEC389170590E50028A6CF /* Default.png */,
+				2EDEC38B170590E50028A6CF /* Default@2x.png */,
+				2EDEC38D170590E50028A6CF /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2EDEC3A0170598D90028A6CF /* UIViewAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				2EDEC3A1170598D90028A6CF /* UIView+Animation.h */,
+				2EDEC3A2170598D90028A6CF /* UIView+Animation.m */,
+			);
+			path = UIViewAnimation;
+			sourceTree = "<group>";
+		};
+		2EDEC3A41705A1940028A6CF /* img */ = {
+			isa = PBXGroup;
+			children = (
+				2E370F001706901700176863 /* icon@2x.png */,
+				2E370EFE1706901200176863 /* icon.png */,
+				2EDEC3D91705A41F0028A6CF /* recorder_trash_can0.png */,
+				2EDEC3DA1705A41F0028A6CF /* recorder_trash_can0@2x.png */,
+				2EDEC3DB1705A41F0028A6CF /* recorder_trash_can1.png */,
+				2EDEC3DC1705A41F0028A6CF /* recorder_trash_can1@2x.png */,
+				2EDEC3DD1705A41F0028A6CF /* recorder_trash_can2.png */,
+				2EDEC3DE1705A41F0028A6CF /* recorder_trash_can2@2x.png */,
+				FEF759A417A7BF1400736E7F /* chat_voice_03@2x.png */,
+				FEF759A517A7BF1400736E7F /* RecordingBkg.png */,
+				FEF759A617A7BF1400736E7F /* RecordingBkg@2x.png */,
+				FEF759A717A7BF1400736E7F /* RecordingSignal001.png */,
+				FEF759A817A7BF1400736E7F /* RecordingSignal001@2x.png */,
+				FEF759A917A7BF1400736E7F /* RecordingSignal002.png */,
+				FEF759AA17A7BF1400736E7F /* RecordingSignal002@2x.png */,
+				FEF759AB17A7BF1400736E7F /* RecordingSignal003.png */,
+				FEF759AC17A7BF1400736E7F /* RecordingSignal003@2x.png */,
+				FEF759AD17A7BF1400736E7F /* RecordingSignal004.png */,
+				FEF759AE17A7BF1400736E7F /* RecordingSignal004@2x.png */,
+				FEF759AF17A7BF1400736E7F /* RecordingSignal005.png */,
+				FEF759B017A7BF1400736E7F /* RecordingSignal005@2x.png */,
+				FEF759B117A7BF1400736E7F /* RecordingSignal006.png */,
+				FEF759B217A7BF1400736E7F /* RecordingSignal006@2x.png */,
+				FEF759B317A7BF1400736E7F /* RecordingSignal007.png */,
+				FEF759B417A7BF1400736E7F /* RecordingSignal007@2x.png */,
+				FEF759B517A7BF1400736E7F /* RecordingSignal008.png */,
+				FEF759B617A7BF1400736E7F /* RecordingSignal008@2x.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		2EDEC3B31705A31C0028A6CF /* VoiceRecorderVC */ = {
+			isa = PBXGroup;
+			children = (
+				2EDEC3B51705A31C0028A6CF /* ChatRecorderView */,
+				2EDEC3B41705A31C0028A6CF /* ChatVoiceRecorderVC */,
+			);
+			path = VoiceRecorderVC;
+			sourceTree = "<group>";
+		};
+		2EDEC3B41705A31C0028A6CF /* ChatVoiceRecorderVC */ = {
+			isa = PBXGroup;
+			children = (
+				2EDEC3BC1705A31C0028A6CF /* VoiceRecorderBaseVC.h */,
+				2EDEC3BD1705A31C0028A6CF /* VoiceRecorderBaseVC.m */,
+				2EDEC3B91705A31C0028A6CF /* ChatVoiceRecorderVC.h */,
+				2EDEC3BA1705A31C0028A6CF /* ChatVoiceRecorderVC.m */,
+			);
+			path = ChatVoiceRecorderVC;
+			sourceTree = "<group>";
+		};
+		2EDEC3B51705A31C0028A6CF /* ChatRecorderView */ = {
+			isa = PBXGroup;
+			children = (
+				2EDEC3B61705A31C0028A6CF /* ChatRecorderView.h */,
+				2EDEC3B71705A31C0028A6CF /* ChatRecorderView.m */,
+			);
+			name = ChatRecorderView;
+			path = ChatVoiceRecorderVC/ChatRecorderView;
+			sourceTree = "<group>";
+		};
+		2EDEC3C31705A3280028A6CF /* VoiceConvert */ = {
+			isa = PBXGroup;
+			children = (
+				2EDEC3C41705A3280028A6CF /* amrwapper */,
+				2EDEC3C91705A3280028A6CF /* lib */,
+				2EDEC3CC1705A3280028A6CF /* opencore-amrnb */,
+				2EDEC3CF1705A3280028A6CF /* opencore-amrwb */,
+				2EDEC3D21705A3280028A6CF /* VoiceConverter.h */,
+				2EDEC3D31705A3280028A6CF /* VoiceConverter.mm */,
+			);
+			path = VoiceConvert;
+			sourceTree = "<group>";
+		};
+		2EDEC3C41705A3280028A6CF /* amrwapper */ = {
+			isa = PBXGroup;
+			children = (
+				2EDEC3C51705A3280028A6CF /* amrFileCodec.h */,
+				2EDEC3C61705A3280028A6CF /* amrFileCodec.mm */,
+				2EDEC3C71705A3280028A6CF /* wav.h */,
+				2EDEC3C81705A3280028A6CF /* wav.mm */,
+			);
+			path = amrwapper;
+			sourceTree = "<group>";
+		};
+		2EDEC3C91705A3280028A6CF /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				2EDEC3CA1705A3280028A6CF /* libopencore-amrnb.a */,
+				2EDEC3CB1705A3280028A6CF /* libopencore-amrwb.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		2EDEC3CC1705A3280028A6CF /* opencore-amrnb */ = {
+			isa = PBXGroup;
+			children = (
+				2EDEC3CD1705A3280028A6CF /* interf_dec.h */,
+				2EDEC3CE1705A3280028A6CF /* interf_enc.h */,
+			);
+			path = "opencore-amrnb";
+			sourceTree = "<group>";
+		};
+		2EDEC3CF1705A3280028A6CF /* opencore-amrwb */ = {
+			isa = PBXGroup;
+			children = (
+				2EDEC3D01705A3280028A6CF /* dec_if.h */,
+				2EDEC3D11705A3280028A6CF /* if_rom.h */,
+			);
+			path = "opencore-amrwb";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2EDEC373170590E40028A6CF /* AmrConvertAndRecord */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EDEC397170590E50028A6CF /* Build configuration list for PBXNativeTarget "AmrConvertAndRecord" */;
+			buildPhases = (
+				2EDEC370170590E40028A6CF /* Sources */,
+				2EDEC371170590E40028A6CF /* Frameworks */,
+				2EDEC372170590E40028A6CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AmrConvertAndRecord;
+			productName = AmrConvertAndRecord;
+			productReference = 2EDEC374170590E40028A6CF /* AmrConvertAndRecord.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2EDEC36C170590E40028A6CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Jeans;
+			};
+			buildConfigurationList = 2EDEC36F170590E40028A6CF /* Build configuration list for PBXProject "AmrConvertAndRecord" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2EDEC36B170590E40028A6CF;
+			productRefGroup = 2EDEC375170590E40028A6CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2EDEC373170590E40028A6CF /* AmrConvertAndRecord */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2EDEC372170590E40028A6CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EDEC382170590E40028A6CF /* InfoPlist.strings in Resources */,
+				2EDEC38A170590E50028A6CF /* Default.png in Resources */,
+				2EDEC38C170590E50028A6CF /* Default@2x.png in Resources */,
+				2EDEC38E170590E50028A6CF /* Default-568h@2x.png in Resources */,
+				2EDEC394170590E50028A6CF /* ViewController.xib in Resources */,
+				2EDEC3DF1705A41F0028A6CF /* recorder_trash_can0.png in Resources */,
+				2EDEC3E01705A41F0028A6CF /* recorder_trash_can0@2x.png in Resources */,
+				2EDEC3E11705A41F0028A6CF /* recorder_trash_can1.png in Resources */,
+				2EDEC3E21705A41F0028A6CF /* recorder_trash_can1@2x.png in Resources */,
+				2EDEC3E31705A41F0028A6CF /* recorder_trash_can2.png in Resources */,
+				2EDEC3E41705A41F0028A6CF /* recorder_trash_can2@2x.png in Resources */,
+				2E370EFF1706901200176863 /* icon.png in Resources */,
+				2E370F011706901700176863 /* icon@2x.png in Resources */,
+				FEF759B717A7BF1400736E7F /* chat_voice_03@2x.png in Resources */,
+				FEF759B817A7BF1400736E7F /* RecordingBkg.png in Resources */,
+				FEF759B917A7BF1400736E7F /* RecordingBkg@2x.png in Resources */,
+				FEF759BA17A7BF1400736E7F /* RecordingSignal001.png in Resources */,
+				FEF759BB17A7BF1400736E7F /* RecordingSignal001@2x.png in Resources */,
+				FEF759BC17A7BF1400736E7F /* RecordingSignal002.png in Resources */,
+				FEF759BD17A7BF1400736E7F /* RecordingSignal002@2x.png in Resources */,
+				FEF759BE17A7BF1400736E7F /* RecordingSignal003.png in Resources */,
+				FEF759BF17A7BF1400736E7F /* RecordingSignal003@2x.png in Resources */,
+				FEF759C017A7BF1400736E7F /* RecordingSignal004.png in Resources */,
+				FEF759C117A7BF1400736E7F /* RecordingSignal004@2x.png in Resources */,
+				FEF759C217A7BF1400736E7F /* RecordingSignal005.png in Resources */,
+				FEF759C317A7BF1400736E7F /* RecordingSignal005@2x.png in Resources */,
+				FEF759C417A7BF1400736E7F /* RecordingSignal006.png in Resources */,
+				FEF759C517A7BF1400736E7F /* RecordingSignal006@2x.png in Resources */,
+				FEF759C617A7BF1400736E7F /* RecordingSignal007.png in Resources */,
+				FEF759C717A7BF1400736E7F /* RecordingSignal007@2x.png in Resources */,
+				FEF759C817A7BF1400736E7F /* RecordingSignal008.png in Resources */,
+				FEF759C917A7BF1400736E7F /* RecordingSignal008@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2EDEC370170590E40028A6CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EDEC384170590E50028A6CF /* main.m in Sources */,
+				2EDEC388170590E50028A6CF /* AppDelegate.m in Sources */,
+				2EDEC391170590E50028A6CF /* ViewController.m in Sources */,
+				2EDEC3A3170598D90028A6CF /* UIView+Animation.m in Sources */,
+				2EDEC3BE1705A31C0028A6CF /* ChatRecorderView.m in Sources */,
+				2EDEC3C01705A31C0028A6CF /* ChatVoiceRecorderVC.m in Sources */,
+				2EDEC3C21705A31C0028A6CF /* VoiceRecorderBaseVC.m in Sources */,
+				2EDEC3D41705A3280028A6CF /* amrFileCodec.mm in Sources */,
+				2EDEC3D51705A3280028A6CF /* wav.mm in Sources */,
+				2EDEC3D81705A3280028A6CF /* VoiceConverter.mm in Sources */,
+				2E9151F61705D45500245A79 /* CustomWindow.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2EDEC380170590E40028A6CF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EDEC381170590E40028A6CF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2EDEC392170590E50028A6CF /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EDEC393170590E50028A6CF /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2EDEC395170590E50028A6CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2EDEC396170590E50028A6CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2EDEC398170590E50028A6CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Xu Zhiwen (L479Y675FH)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AmrConvertAndRecord/AmrConvertAndRecord-Prefix.pch";
+				INFOPLIST_FILE = "AmrConvertAndRecord/AmrConvertAndRecord-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/AmrConvertAndRecord/VoiceConvert/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1809DAB3-7405-477E-85FB-F31DCB13082F";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2EDEC399170590E50028A6CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AmrConvertAndRecord/AmrConvertAndRecord-Prefix.pch";
+				INFOPLIST_FILE = "AmrConvertAndRecord/AmrConvertAndRecord-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/AmrConvertAndRecord/VoiceConvert/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2EDEC36F170590E40028A6CF /* Build configuration list for PBXProject "AmrConvertAndRecord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EDEC395170590E50028A6CF /* Debug */,
+				2EDEC396170590E50028A6CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EDEC397170590E50028A6CF /* Build configuration list for PBXNativeTarget "AmrConvertAndRecord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EDEC398170590E50028A6CF /* Debug */,
+				2EDEC399170590E50028A6CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2EDEC36C170590E40028A6CF /* Project object */;
+}
